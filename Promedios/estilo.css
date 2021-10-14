@@ -94,13 +94,15 @@ body{
     color:#2ecece;
 }
 
-.form #casilla2:focus + .lbl-nota .text-nota{
+.form #casilla2:focus + .lbl-nota .text-nota,
+.form #casilla2:valid + .lbl-nota .text-nota{
     transform:translateY(-150%);
     font-size: 14px;
     color:#2ecece;
 }
 
-.form input:focus + .lbl-nota:after{
+.form input:focus + .lbl-nota:after,
+.form input:valid + .lbl-nota:after{
     transform: translateX(0%);
 }
 

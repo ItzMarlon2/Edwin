@@ -16,8 +16,13 @@ function operacion(){
     let final=resta/0.4;
     if(final<=5.0){
         resultado.textContent=`Debes sacar ${final.toFixed(1)} para ganar la materia...`;
-    }else{
+    }
+    else{
         resultado.textContent=`No hay manera de recuperar la materia`
     }
+    if(final<0.0){
+        resultado.textContent=`Sea cual sea el resultado ya ganaste la materia`
+    }
+    
     resultado.style.color="#2ecece";
 }
