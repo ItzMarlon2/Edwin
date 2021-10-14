@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Solid&display=swap');
 *{
     padding:0;
     margin:0;
@@ -28,8 +29,8 @@ section{
 }
 
 section h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
     
 }
 
@@ -62,15 +63,69 @@ input::-webkit-input-placeholder{
     text-align: center;
 }
 
-
 #opciones button{
-    padding:8px ;
-    border:1px solid black;
+    padding:8px 15px;
     border-radius: 7px;
 }
 
-#opciones button:hover{
-    background-color: rgb(110, 202, 110);
+#opciones #btn-sum{
+    background-color: rgb(0, 238, 255);
+    border:1px solid rgb(0, 238, 255);
+    border-radius: 7px;
+}
+
+#opciones #btn-sum:hover{
+    background-color: rgb(2, 206, 221);
+}
+
+#opciones #btn-sum:focus{
+    border:none;
+    background-color: rgb(243, 187, 229);
+}
+
+#opciones #btn-rest{
+    background-color: rgb(0, 238, 255);
+    border:1px solid rgb(0, 238, 255);
+    border-radius: 7px;
+}
+
+#opciones #btn-rest:hover{
+    background-color: rgb(2, 206, 221);
+}
+
+#opciones #btn-rest:focus{
+    border:none;
+    background-color: rgb(243, 187, 229);
+}
+
+#opciones #btn-mult{
+    background-color: rgb(0, 238, 255);
+    border:1px solid rgb(0, 238, 255);
+    border-radius: 7px;
+}
+
+#opciones #btn-mult:hover{
+    background-color: rgb(2, 206, 221);
+}
+
+#opciones #btn-mult:focus{
+    border:none;
+    background-color: rgb(243, 187, 229);
+}
+
+#opciones #btn-div{
+    background-color: rgb(0, 238, 255);
+    border:1px solid rgb(0, 238, 255);
+    border-radius: 7px;
+}
+
+#opciones #btn-div:hover{
+    background-color: rgb(2, 206, 221);
+}
+
+#opciones #btn-div:focus{
+    border:none;
+    background-color: rgb(243, 187, 229);
 }
 
 
