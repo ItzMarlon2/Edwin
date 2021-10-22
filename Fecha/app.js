@@ -22,7 +22,7 @@ function calcularEdad(){
     let year = year_actually - yearUser;
     let month = month_actually - monthUser;
     let day = day_actually - dayUser;
-
+    
     if(year>=18 && month>=0 && day>=0 || year>=18 && month>=1){        
         if (month>=0 && day>=0 || month>=1) {
             result.textContent=`Señor@ ${user_name} usted tiene ${year} usted es mayor de edad`;
