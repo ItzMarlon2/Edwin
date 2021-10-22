@@ -17,7 +17,7 @@ function obtenerColor(){
 function verificar(){
     nuevoColor=obtenerColor();
     cuerpo.style.backgroundColor=nuevoColor;
-    parrafo.style.color=nuevoColor;
+    parrafo.textContent=nuevoColor;
     seccion.style.backgroundColor=nuevoColor;
     titulo.style.color=nuevoColor;
 }
