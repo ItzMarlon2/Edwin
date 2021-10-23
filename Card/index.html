@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Card</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>CREATE CARD</h1>
+    </div>
+    <form class="formulario" id="formulario">
+        <div class="formulario_grupo" id="formulario_grupo">
+            <label for="nombre" class="formulario_lbl" id="formulario_lbl">Usuario</label>
+            <div class="formulario_grupo-input">
+                <i class="formulario_validacion-user fas fa-user"></i>
+                <input type="text" class="nombre" id="nombre" placeholder="Nombre de usuario">
+                <i class="formulario_validacion fas fa-times-circle" id="icono"></i>
+            </div>
+            <p class="parrafo" id="parrafo">El nombre de usuario debe tener mas de 3 caracteres y no permite caracteres especiales, solo letras y números.</p>
+        </div>
+        <div class="formulario_mensaje" id="formulario_mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Rellene el campo faltante.</p>
+        </div>
+
+        <div class="formulario_grupo formulario_btn" id="formulario_btn">
+            <button type="submit" class="formulario__btn" id="boton">Entrar</button>
+        </div>
+    </form>
+    <section class="section" id="section">
+        <div class="contenedor_nombre" id="contenedor_nombre">
+            <h1 class ="mostrar_nombre" id="mostrar_nombre">Nombre</h1>
+        </div>
+        <div class="contenedor_texto" id="contenedor_texto">
+            <p class="texto" id="texto">BIENVENID@</p>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/fa0f5c32de.js" crossorigin="anonymous"></script>
+</body>
+</html>
