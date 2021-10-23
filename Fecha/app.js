@@ -25,16 +25,16 @@ function calcularEdad(){
     
     if(year>=18 && month>=0 && day>=0 || year>=18 && month>=1){        
         if (month>=0 && day>=0 || month>=1) {
-            result.textContent=`Señor@ ${user_name} usted tiene ${year} usted es mayor de edad`;
+            result.textContent=`Señor@ ${user_name} usted tiene ${year}, usted es mayor de edad`;
             result.style="text-Shadow: 0px 0px 5px rgb(1, 197, 10), 0px 0px 5px rgb(1, 197, 10)"; 
         } else {
-            result.textContent=`Señor@ ${user_name} usted tiene ${year-1} usted es menor de edad`;
+            result.textContent=`Señor@ ${user_name} usted tiene ${year-1}, usted es menor de edad`;
         }
     }else{
         if (month>=0 && day>=0 || month>=1) {
-            result.textContent=`Señor@ ${user_name} usted tiene ${year} usted es menor de edad`; 
+            result.textContent=`Señor@ ${user_name} usted tiene ${year}, usted es menor de edad`; 
         } else {
-            result.textContent=`Señor@ ${user_name} usted tiene ${year-1} usted es menor de edad`;
+            result.textContent=`Señor@ ${user_name} usted tiene ${year-1}, usted es menor de edad`;
         }
     }
 
