@@ -30,7 +30,6 @@ function validarFormulario (){
         document.querySelector('#formulario_grupo #icono').classList.remove('fa-check-circle')
         document.querySelector('#formulario_grupo .parrafo').classList.add('parrafo-activo')
         document.getElementById('formulario_mensaje').classList.remove('formulario_mensaje-activo')
-
         campo.usuario = false
     }
 }
