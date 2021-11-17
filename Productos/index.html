@@ -14,7 +14,24 @@
             
         </div>
     </main>
-    <footer class="pie"></footer>
+    <footer class="pie">
+        <template id="template-carrito">
+            <tr>
+              <th scope="row">id</th>
+              <td>1</td>
+              <td><img src="" alt=""></td>
+              <td class="titulo-td">Café</td>
+              <td>$ <span>500</span></td>
+              <td><input class="cantidad" type="number" value="1"></td>
+              <td><button class="button-delete">Borrar</button></td>
+            </tr>
+          </template>
+    </footer>
+    <div id="Contenedor-precio">
+        <h3>Precio total: </h3>
+        <p >0</p>
+        <button class="comprar-boton">Comprar</button>
+    </div>
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/fa0f5c32de.js" crossorigin="anonymous"></script>
 </body>
