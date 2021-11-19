@@ -6,11 +6,18 @@
 }
 
 body{
-
+    font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
-.contenedor-principal{
-
+.cabecera{
+    max-width: 1000px;
+    height:200px;
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:#2196f3;
 }
 
 .contenedor_card{
@@ -18,7 +25,7 @@ body{
     padding-bottom: 40px;
     display:flex;
     justify-content:center;
-    margin-top:60px;
+    margin-top:20px;
     flex-wrap: wrap;
     justify-content:center;
 }
@@ -161,4 +168,136 @@ body{
     color:#2196f3;
 }
 
+.pie{
+    max-width:1000px;
+    margin:auto;
+    border:1px solid #999898;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
+tr{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+tr td{
+    width:100px;
+    text-align: center;
+}
+
+tr #td-id{
+    color:#146eb0;
+}
+
+tr img{
+    width:80px;
+}
+
+tr .titulo-td{
+    font-weight: 800;
+}
+
+tr #td-precio{
+    color:#2196f3;
+}
+
+tr input{
+    border:1px solid #7a7a7a;
+    width:100px;
+    height:20px;
+    text-align: center;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+tr button{
+    padding: 4px 15px;
+    background-color:rgb(216, 43, 43);
+    border-radius:15px;
+    border:none;
+    color:white;
+    box-shadow:1px 1px 5px 0px #7a7a7a40;
+    transition:all 300ms;
+}
+
+tr button:hover{
+    background-color: rgb(173, 35, 35);
+    box-shadow:1px 1px 5px 0px #7a7a7a80;
+}
+
+#Contenedor-titulo{
+    max-width: 1000px;
+    height:30px;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    border:1px solid #999898;
+    border-bottom: none;
+}
+
+#Contenedor-titulo h3{
+    width:100px;
+    text-align: center;
+    color: #146eb0;
+}
+
+#Contenedor-titulo #t1{
+    margin-right: 20px;
+}
+
+#Contenedor-precio{
+    max-width: 1000px;
+    height:80px;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    border:1px solid #999898;
+    margin-bottom: 20px;
+}
+
+#Contenedor-precio p{
+    font-size: 30px;
+    font-weight: 500;
+    color:#2196f3;
+    margin:0;
+}
+
+#Contenedor-precio h3{
+    font-size: 25px;
+}
+
+#Contenedor-precio button{
+    padding:10px 30px;
+    background-color: rgba(19, 218, 79, 0.87);
+    border-radius:15px;
+    border:none;
+    color:white;
+    box-shadow:1px 1px 5px 0px #7a7a7a40;
+    transition:all 300ms;
+}
+
+#Contenedor-precio button:hover{
+    background-color: rgba(16, 180, 65, 0.87);
+    box-shadow:1px 1px 5px 0px #7a7a7a80;
+
+}
+
+.exito{
+    max-width: 1000px;
+    margin:auto;
+    background-color:transparent;
+    transition:all 500ms;
+    position: fixed;
+    right:0;
+    left: 0;
+    bottom:400px;
+    z-index:-1;
+}
+.exito h2{
+    color:white;
+    text-align: center;
+}

@@ -8,29 +8,47 @@
     <title>Productos</title>
 </head>
 <body>
-    <header class="cabecera"></header>
+    <!--PRIMER PASO-->
+    <header class="cabecera">
+        <h1>CARRITO DE COMPRAS</h1>
+    </header>
     <main class="contenedor-principal" id="main">
         <div class="contenedor_card" id="contenedor_card">
             
         </div>
     </main>
+    <!------------------->
+    <div id="Contenedor-titulo">
+        <h3 id="ti1">ID </h3> 
+        <h3 id="ti2">IMAGEN  </h3> 
+        <h3 id="ti3">TITULO </h3> 
+        <h3 id="ti4">PRECIO  </h3> 
+        <h3 id="ti5">CANTIDAD  </h3> 
+        <h3 id="ti6">ELIMINAR  </h3> 
+    </div>
+    <!--SEGUNDO PASO-->
     <footer class="pie">
         <template id="template-carrito">
             <tr>
-              <th scope="row">id</th>
-              <td>1</td>
-              <td><img src="" alt=""></td>
-              <td class="titulo-td">Café</td>
-              <td>$ <span>500</span></td>
-              <td><input class="cantidad" type="number" value="1"></td>
-              <td><button class="button-delete">Borrar</button></td>
+                <td id="td-id">1</td>
+                <td><img src="" alt=""></td>
+                <td class="titulo-td">Café</td>
+                <td id="td-precio">$ <span>500</span></td>
+                <td><input class="cantidad" type="number" value="1"></td>
+                <!---POR ÚLTIMO HAY QUE TENER EN CUENTA EL BOTÓN DE BORRAR-->
+                <td><button class="button-delete">Borrar</button></td>
             </tr>
-          </template>
+        </template>
     </footer>
+    <!--Sigue-->
     <div id="Contenedor-precio">
-        <h3>Precio total: </h3>
+        <h3>Precio total:  </h3> 
         <p >0</p>
         <button class="comprar-boton">Comprar</button>
+    </div>
+    <!----------------------->
+    <div class="exito" id="exito">
+        <h2>COMPRA EXITOSA!</h2>
     </div>
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/fa0f5c32de.js" crossorigin="anonymous"></script>
