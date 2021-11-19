@@ -75,9 +75,10 @@ function create_card(){
         card_info.appendChild(p_card_info)
         card_info.appendChild(p_card);
         card_info.appendChild(btn_card);
-        contenedor.appendChild(card)
-        main.appendChild(contenedor);
+        fragment.appendChild(card)
     })
+        contenedor.appendChild(fragment)
+        main.appendChild(contenedor);
 
 }
 
