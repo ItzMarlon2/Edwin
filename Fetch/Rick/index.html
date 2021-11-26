@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esilos.css">
     <title>Api-Rick</title>
 </head>
 <body>
-    <select class="select" name="select" >
-        <option class="option" value="todos">todos</option>
-      </select>
+    <header>
+        <h1>API - RICK AND MORTY </h1>
+    </header>
+    <div class="contenedor-select">
+        <select class="select" name="select" >
+            <option class="option"  selected disabled value="todos">Seleccionar</option>
+            <option class="option" value="todos">Todos</option>
+          </select>
+    </div>
     <main id="main">
         <template id="templateCarrito">
             <div class="contenedorCard">
                 <h2 class="titu-card"></h2>
                 <img src="" alt="" class="img-card">
                 <hr>
-                <p class="info-card"></p>
+                    <p class="info-card"> </p> 
             </div>
 
         </template>

@@ -45,17 +45,20 @@ const crearCard=arreglo=>{
             arreglo.forEach(arreglo =>{
             templateCarrito.querySelector('.titu-card').textContent=arreglo.name
             templateCarrito.querySelector('.img-card').src=arreglo.image
-            templateCarrito.querySelector('.info-card').textContent=arreglo.species
+            templateCarrito.querySelector('.info-card').textContent=arreglo.gender
             const clone = templateCarrito.cloneNode(true)
             fragment.appendChild(clone)
             main.appendChild(fragment)
         })
+        
+        
+        
     }else { 
         main.innerHTML=""
         const arreglo2 = arreglo.filter(arreglo => arreglo.name === select.value)
             templateCarrito.querySelector('.titu-card').textContent=arreglo2[0].name
             templateCarrito.querySelector('.img-card').src=arreglo2[0].image
-            templateCarrito.querySelector('.info-card').textContent=arreglo2[0].species
+            templateCarrito.querySelector('.info-card').textContent=arreglo2[0].gender
             const clone = templateCarrito.cloneNode(true)
             fragment.appendChild(clone)
             main.appendChild(fragment)
