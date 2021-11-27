@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecera">
+        <h1>CARRITO DE COMPRAS</h1>
+    </header>
+    <main class="contenedor-principal" id="main">
+        <div class="contenedor_card" id="contenedor_card">
+
+        </div>
+    </main>
+
+    <footer class="pie">
+        <template id="template-carrito">
+            <tr>
+                <td id="td-id">1</td>
+                <td><img src="" alt=""></td>
+                <td class="titulo-td">Café</td>
+                <td id="td-precio">$ <span>500</span></td>
+                <td><input class="cantidad" type="number" value="1"></td>
+                <td><button class="button-delete">Borrar</button></td>
+            </tr>
+        </template>
+    </footer>
+    <div id="Contenedor-precio">
+        <h3>Precio total: </h3>
+        <p>0</p>
+        <button class="comprar-boton">Comprar</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
