@@ -20,11 +20,13 @@ btn_card.addEventListener('click', fetchApi)
 
 
 const crearCard = producto =>{
-    templateCarrito.querySelector('.titu-card').textContent=producto[0].character
-    templateCarrito.querySelector('.img-card').src=producto[0].image
-    templateCarrito.querySelector('.info-card').textContent=producto[0].quote
+    producto.forEach(producto=>{
+        templateCarrito.querySelector('.titu-card').textContent=producto[0].character
+        templateCarrito.querySelector('.img-card').src=producto[0].image
+        templateCarrito.querySelector('.info-card').textContent=producto[0].quote
     const clone = templateCarrito.cloneNode(true)
     fragment.appendChild(clone)
+    })
     main.appendChild(fragment)
 }
 

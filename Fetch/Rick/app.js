@@ -16,7 +16,6 @@ const fetchApi = ()=>{
     .then(producto=>{
         main.innerHTML=""
         const arreglo = producto.results
-
         seleccionarOpcion(arreglo)
     })
 }
@@ -25,7 +24,6 @@ const seleccionarOpcion= arreglo=>{
     arreglo.forEach(data=>{
         const option= document.createElement('option')
         option.setAttribute('value', data.name)
-        option.classList.add('option')
         option.textContent=data.name
         fragment.appendChild(option)
     })
@@ -50,21 +48,14 @@ const crearCard=arreglo=>{
             fragment.appendChild(clone)
             main.appendChild(fragment)
         })
-        
-        
-        
     }else { 
         main.innerHTML=""
         const arreglo2 = arreglo.filter(arreglo => arreglo.name === select.value)
-            templateCarrito.querySelector('.titu-card').textContent=arreglo2[0].name
-            templateCarrito.querySelector('.img-card').src=arreglo2[0].image
-            templateCarrito.querySelector('.info-card').textContent=arreglo2[0].gender
-            const clone = templateCarrito.cloneNode(true)
-            fragment.appendChild(clone)
-            main.appendChild(fragment)
+        templateCarrito.querySelector('.titu-card').textContent=arreglo2[0].name
+        templateCarrito.querySelector('.img-card').src=arreglo2[0].image
+        templateCarrito.querySelector('.info-card').textContent=arreglo2[0].gender
+        const clone = templateCarrito.cloneNode(true)
+        fragment.appendChild(clone)
+        main.appendChild(fragment)
     }
-
 }
-
-
-
