@@ -31,7 +31,7 @@ const animales = [
 
 const crearCard = animales =>{
     animales.forEach(ani=>{
-        if(ani.type=="Ave"){
+        if(ani.type=="Ave" &&  ani.age>10){
             template.querySelector('h2').textContent=ani.name
             template.querySelectorAll('p')[0].textContent=ani.type
             template.querySelectorAll('p')[1].textContent=ani.age
