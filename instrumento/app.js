@@ -6,50 +6,52 @@ const boton1=document.querySelector('.boton1')
 const boton2=document.querySelector('.boton2')
 const boton3=document.querySelector('.boton3')
 const boton4=document.querySelector('.boton4')
+const input = document.querySelector('input')
+
+
 const fragment = document.createDocumentFragment()
 
-const fetchApi = ()=>{
-    fetch(URL)
-    .then(res => res.json())
-    .then(producto=>{
-        main.innerHTML=""
-        generarCard(producto.message)
-    })
+const fetchApi = (contador)=>{
+    for (let i = 0; i < contador; i++) {
+        fetch(URL)
+        .then(res => res.json())
+        .then(producto=>{
+            generarCard(producto.message)
+        })
+    }
+    main.innerHTML=""
 }
 
-contador=0;
+let contador=0;
 
 boton1.addEventListener('click', function(){
     contador=1
-    generarCard()
+    fetchApi(contador)
 })
 boton2.addEventListener('click', function(){
     contador=3
-    generarCard()
+    fetchApi(contador)
 })
 boton3.addEventListener('click', function(){
     contador=9
-    generarCard()
+    fetchApi(contador)
 })
 boton4.addEventListener('click', function(){
-    console.log("hola")
     contador=12
-    generarCard()
+    fetchApi(contador)
+})
+input.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+        contador=input.value;
+        fetchApi(contador);
+    }
 })
 
-function generarApi(){
-    for (let i = 0; i < contador; i++) {
-        fetchApi()
-    }
-}
 const generarCard = (producto) =>{
-        for (let i = 0; i < contador; i++) {
-            templateCarrito.querySelector('.img-card').src=producto
-            const clone = templateCarrito.cloneNode(true)
-            fragment.appendChild(clone)
-        }
-            main.appendChild(fragment)
-            console.log(main)
+        templateCarrito.querySelector('.img-card').src=producto
+        const clone = templateCarrito.cloneNode(true)
+        fragment.appendChild(clone)
+        main.appendChild(fragment)
 }
 
 
