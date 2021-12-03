@@ -2,14 +2,11 @@ const URL = 'https://dog.ceo/api/breeds/image/random'
 
 const main = document.getElementById('main')
 const templateCarrito = document.getElementById('templateCarrito').content
-const boton=document.querySelectorAll('button')
-console.log(boton)
+const boton1=document.querySelector('.boton1')
+const boton2=document.querySelector('.boton2')
+const boton3=document.querySelector('.boton3')
+const boton4=document.querySelector('.boton4')
 const fragment = document.createDocumentFragment()
-
-document.addEventListener('DOMContentLoaded', ()=>{
-    fetchApi()
-})
-
 
 const fetchApi = ()=>{
     fetch(URL)
@@ -20,14 +17,39 @@ const fetchApi = ()=>{
     })
 }
 
-boton.addEventListener('click', fetchApi)
+contador=0;
 
-const generarCard = producto =>{
+boton1.addEventListener('click', function(){
+    contador=1
+    generarCard()
+})
+boton2.addEventListener('click', function(){
+    contador=3
+    generarCard()
+})
+boton3.addEventListener('click', function(){
+    contador=9
+    generarCard()
+})
+boton4.addEventListener('click', function(){
+    console.log("hola")
+    contador=12
+    generarCard()
+})
 
-        for (let i = 0; i < Number(boton.textContent); i++) {
+function generarApi(){
+    for (let i = 0; i < contador; i++) {
+        fetchApi()
+    }
+}
+const generarCard = (producto) =>{
+        for (let i = 0; i < contador; i++) {
             templateCarrito.querySelector('.img-card').src=producto
             const clone = templateCarrito.cloneNode(true)
             fragment.appendChild(clone)
-            }
-    main.appendChild(fragment)
+        }
+            main.appendChild(fragment)
+            console.log(main)
 }
+
+
