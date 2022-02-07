@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+
+* {
+  font-family: "Supermercado One", cursive;
+  color: rgb(24, 19, 13);
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(253, 246, 224);
+}
+
+h1 {
+  margin: 3% 0 1% 0;
+  font-size: 50px;
+}
+
+.contador {
+  font-size: 30px;
+}
+
+.imagen {
+  margin: 4% 0;
+  object-fit: contain;
+  width: 500px;
+  height: 500px;
+}
+
+.btn {
+  padding: 2% 3%;
+  margin: 1%;
+  background-color: rgb(24, 19, 13);
+  color: beige;
+}
